@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class MethodDemoOne{
+  // public static void main(String[] args) {
+  //   MethodDemoOne obj1 = new MethodDemoOne();
+  //   int result = obj1.calculateSquare(12);
+  //   System.out.println(result);
+  // }
+
+  // //access-mod type(static) return-type name(list of parameters){//body}
+  // public int calculateSquare(int num){
+  //   return num * num;
+  // }
+
+  public static void checkNumber(int num){
+    if (num == 0) {
+      System.out.println("The given number is zero.");
+    }
+    else if(num < 0){
+      System.out.println("The given number is negative.");
+    }
+    else if(num > 0){
+      if ( num % 2 == 0) {
+        System.out.println("The given number is even.");
+      }
+      else {
+        System.out.println("odd");
+      }
+    }
+  }
+
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    MethodDemoOne.checkNumber(sc.nextInt());
+    MethodDemoOne.checkNumber(sc.nextInt());
+    MethodDemoOne.checkNumber(sc.nextInt());
+    MethodDemoOne.checkNumber(56);
+    MethodDemoOne.checkNumber(56);
+    MethodDemoOne.checkNumber(56);
+    MethodDemoOne.checkNumber(56);
+    MethodDemoOne.checkNumber(56);
+    MethodDemoOne.checkNumber(56);
+  }
+}

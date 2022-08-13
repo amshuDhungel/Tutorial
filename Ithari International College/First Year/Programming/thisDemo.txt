@@ -1,0 +1,27 @@
+public class ThisDemo extends Myparent {
+  int a = 7;
+  public static void main(String[] args) {
+    ThisDemo demo = new ThisDemo();
+    demo.whatIsThis();
+  }
+
+  public String hello(){
+    return "hello ayush";
+  }
+
+  public void whatIsThis(){
+    int a = 36;
+    System.out.println("Value of a "+ a);
+    System.out.println("Value of this.a "+ this.a);
+    System.out.println("Value of this.hello "+ this.hello());
+    System.out.println("Value of super.hello "+ super.hello());
+    System.out.prin
+System.out.println("Value of super.a "+ super.a);
+  }
+}
+class Myparent{
+  int a = 25;
+  public String hello(){
+    return "super hello ayush";
+  }
+}

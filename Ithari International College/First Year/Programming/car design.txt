@@ -1,0 +1,38 @@
+package OOP;
+
+public class Car {
+    String engineName;
+    String carName;
+	static int tyres= 4;
+    boolean isRegisterd;
+
+	void run(){
+        System.out.println("Car is running");
+	}
+
+	String applyBrakes() {
+		//onsuccess
+        String brake = "The car apply the brakes";
+		return brake;
+	}
+
+    public static void main(String[] args) {
+        Car honda = new Car();
+        Car ferrari = new Car();
+        honda.engineName="rohan";
+        ferrari.engineName="samir";
+        System.out.printl
+ honda.engineName="rohan";
+        ferrari.engineName="samir";
+        System.out.println(honda.engineName);
+        System.out.println(ferrari.engineName);
+
+        // ferrari.carName = "anil";
+        // System.out.println("My name is " + ferrari.carName + "My engine name is "+ ferrari.engineName);
+        // ferrari.run();
+        // honda.run();
+        // System.out.println(honda.applyBrakes());
+        // honda.tyres = 4;
+        // System.out.println(honda.tyres);
+    }
+}
